@@ -9,7 +9,7 @@ data "azurerm_resource_group" "training" {
 
 module "loadbalancer" {
   source                     = "atcomputing/lb-http-tutorial/azurerm"
-  version                    = "0.0.2"
+  version                    = "~>0.0.6"
   name                       = "lb_app"
   nic_ids                    = azurerm_network_interface.webapp_nic.*.id
   nic_ip_configuration_names = azurerm_network_interface.webapp_nic[*].ip_configuration[0].name
