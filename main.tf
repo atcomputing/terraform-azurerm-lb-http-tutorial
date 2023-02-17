@@ -14,7 +14,6 @@ resource "azurerm_lb" "main" {
 
   frontend_ip_configuration {
     name                 = "${var.name}_frontend_config"
-    #subnet_id            = var.subnet_id
     public_ip_address_id = var.lb_public_ip_id == null ? azurerm_public_ip.lb_public_ip[0].id : var.lb_public_ip_id
   }
 }
@@ -37,7 +36,6 @@ resource "azurerm_lb_backend_address_pool" "main" {
 }
 
 resource "azurerm_network_interface_backend_address_pool_association" "main" {
-  #for_each = var.nic_ids
   count                   = length(var.nic_ids)
   network_interface_id    = var.nic_ids[count.index]
   ip_configuration_name   = var.nic_ip_configuration_names[count.index]
