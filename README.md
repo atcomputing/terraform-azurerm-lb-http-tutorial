@@ -20,7 +20,6 @@ No modules.
 
 The following resources are used by this module:
 
-- [azurerm_availability_set.main](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/availability_set) (resource)
 - [azurerm_lb.main](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/lb) (resource)
 - [azurerm_lb_backend_address_pool.main](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/lb_backend_address_pool) (resource)
 - [azurerm_lb_probe.http](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/lb_probe) (resource)
@@ -77,10 +76,6 @@ Default: `null`
 ## Outputs
 
 The following outputs are exported:
-
-### <a name="output_availability_set"></a> [availability\_set](#output\_availability\_set)
-
-Description: n/a
 
 ### <a name="output_public_ip"></a> [public\_ip](#output\_public\_ip)
 
