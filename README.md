@@ -4,7 +4,7 @@ The following requirements are needed by this module:
 
 - <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) (>= 0.13.1)
 
-- <a name="requirement_azurer"></a> [azurer](#requirement\_azurer) (>= 3.29)
+- <a name="requirement_azurer"></a> [azurer](#requirement\_azurer) (>= 4.4.0)
 
 ## Providers
 
