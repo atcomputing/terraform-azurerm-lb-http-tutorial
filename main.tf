@@ -3,7 +3,7 @@ resource "azurerm_public_ip" "lb_public_ip" {
   name                = "${var.name}_public_ip"
   location            = var.location
   resource_group_name = var.resource_group_name
-  sku                 = "Basic"
+  sku                 = "Standard"
   allocation_method   = "Static"
 }
 
@@ -11,7 +11,7 @@ resource "azurerm_lb" "main" {
   name                = var.name
   location            = var.location
   resource_group_name = var.resource_group_name
-  sku                 = "Basic"
+  sku                 = "Standard"
 
   frontend_ip_configuration {
     name                 = "${var.name}_frontend_config"
